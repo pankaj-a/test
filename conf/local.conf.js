@@ -14,7 +14,8 @@ exports.config = {
     browser: 'chrome',
     name: 'local_test',
     build: 'webdriver-browserstack',
-    'browserstack.local': true
+    'browserstack.local': true,
+    'browserstack.localIdentifier': process.env.BROWSERSTACK_LOCAL_IDENTIFIER
   }],
 
   logLevel: 'verbose',
